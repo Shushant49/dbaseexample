@@ -20,4 +20,10 @@ private TeacherRepository teacherRepository;
     public List<Teacher> getTeacherList() {
         return teacherRepository.findAll();
     }
+
+    @Override
+    public Teacher saveTeacher(Teacher teacher) {
+        final Teacher save = teacherRepository.save(teacher);
+        return save;
+    }
 }
