@@ -26,4 +26,10 @@ private TeacherRepository teacherRepository;
         final Teacher save = teacherRepository.save(teacher);
         return save;
     }
+
+    @Override
+    public boolean deleteTeacher(Teacher teacher) {
+        teacherRepository.delete(teacher);
+        return true;
+    }
 }

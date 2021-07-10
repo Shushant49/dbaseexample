@@ -8,4 +8,5 @@ public interface TeacherService {
 
     List<Teacher> getTeacherList();
     Teacher saveTeacher(Teacher teacher);
+    boolean deleteTeacher(Teacher teacher);
 }

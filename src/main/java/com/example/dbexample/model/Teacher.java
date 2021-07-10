@@ -14,6 +14,10 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Teacher {
+
+    public Teacher (int teacherId){
+        this.teacherId=teacherId;
+    }
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="id")
     private int teacherId;
